@@ -1,10 +1,11 @@
+import { Link } from 'react-router'
 
 const Navbar = ({setSector}) => {
   return (
     <>
         <ul>
-            <li><a href={'/'} onClick={() => setSector('')}>Home</a></li>
-            <li><a href={'/Owner'}>Owner</a></li>
+            <li><Link to={'/'} onClick={() => setSector('')}>Home</Link></li>
+            <li><Link to={'/Owner'}>Owner</Link></li>
         </ul>
     </>
   )
